@@ -5,6 +5,9 @@ using namespace std;
 
 vector<vector<int>> merge(vector<vector<int>> &a){
     vector<vector<int>> ans;
+    if(a.size() == 0){
+        return a;
+    }
     sort(a.begin(),a.end());
 
     vector<int> temp = a[0];
