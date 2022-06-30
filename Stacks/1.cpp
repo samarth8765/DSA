@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+#define fo(i,n) for(int i = 0; i < n; i++)
+#define ll long long
+using namespace std;
+
+int main() {
+
+#ifndef ONLINE_JUDGE
+	freopen("C:/Users/samdh/Desktop/c++/input1.txt", "r", stdin);
+	freopen("C:/Users/samdh/Desktop/c++/output1.txt", "w", stdout);
+#endif
+	vector<int> ans = {1, 2, 3};
+	ans.erase(ans.begin());
+	for (auto i : ans) cout << i << endl;
+
+}
