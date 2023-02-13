@@ -4,6 +4,16 @@ using namespace std;
 
 void printArray(int a[], int n);
 
+void move_zeros_to_front(int a[], int n){
+    int ct = n-1;
+    for(int i=n-1; i >= 0; i--){
+        if(a[i] != 0){
+            swap(a[i], a[ct]);
+            ct--;
+        }
+    }
+}
+
 void move_zeros_to_end(int a[], int n){
     int count = 0;
     for(int i=0; i < n; i++){
