@@ -31,9 +31,10 @@ vector<int> findDuplicates(vector<int> &a)
 
 int main()
 {
-    vector<int> nums = {4,3,2,7,8,2,3,1};
+    vector<int> nums = {4, 3, 2, 7, 8, 2, 3, 1};
     vector<int> ans = findDuplicates(nums);
-    for(auto i : ans){
+    for (auto i : ans)
+    {
         cout << i << '\n';
     }
     return 0;
